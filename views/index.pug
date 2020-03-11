@@ -1,0 +1,666 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' href='/images/favicon.png')
+  title Public Code
+  link(rel='stylesheet' type='text/css' href='/css/bootstrap.min.css')
+  link(rel='stylesheet' type='text/css' href='/css/plugins.css')
+  link(rel='stylesheet' type='text/css' href='/revolution/css/settings.css')
+  link(rel='stylesheet' type='text/css' href='/revolution/css/layers.css')
+  link(rel='stylesheet' type='text/css' href='/revolution/css/navigation.css')
+  link(rel='stylesheet' type='text/css' href='/type/type.css')
+  link(rel='stylesheet' type='text/css' href='/css/style.css')
+  link(rel='stylesheet' type='text/css' href='/css/color/purple.css')
+  link(href='https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i&display=swap' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='/css/font/font2.css')
+.content-wrapper
+  nav.navbar.absolute.transparent.inverse-text.navbar-hover-opacity.nav-uppercase.navbar-expand-lg
+    .container.flex-row.justify-content-center
+      .navbar-brand
+      .navbar-other.ml-auto.order-lg-3
+        ul.navbar-nav.flex-row.align-items-center(data-sm-skip='true')
+          li.nav-item
+            .navbar-hamburger.d-lg-none.d-xl-none.ml-auto
+              button.hamburger.animate.plain(data-toggle='offcanvas-nav')
+                span
+        // /.navbar-nav
+      // /.navbar-other
+      .navbar-collapse.offcanvas-nav
+        .offcanvas-header.d-lg-none.d-xl-none
+          a(href='index.html')
+            img(src='#' srcset='/images/logo-light.png 1x, /images/logo-light@2x.png 2x' alt='')
+          button.plain.offcanvas-close.offcanvas-nav-close
+            i.jam.jam-close
+        ul.navbar-nav.mx-auto(style='text-align:right; ')
+          li.nav-item
+            a#titleIndex.nav-link(href='index.html')
+          li.nav-item.dropdown
+            a#teamCategories.nav-link.dropdown-toggle(href='#!')
+            ul.dropdown-menu
+              li.dropdown
+                a#GraphicTeam.dropdown-item.dropdown-toggle(href='#')
+                ul.dropdown-menu
+                  li.nav-item
+                    a#shayanGheraphicTeam.dropdown-item(href='header.html')
+              li.dropdown
+                a#programmersTeam.dropdown-item.dropdown-toggle(href='#')
+                ul.dropdown-menu
+                  li.nav-item
+                    a#programmersTeamMember1.dropdown-item(href='footer.html')
+                  li.nav-item
+                    a#programmersTeamMember2.dropdown-item(href='footer2.html')
+              li.dropdown
+                a#animationTeam.dropdown-item.dropdown-toggle(href='#')
+                ul.dropdown-menu
+                  li.nav-item
+                    a#animationTeamMember1.dropdown-item(href='page-title.html')
+                  li.nav-item
+                    a#animationTeamMember2.dropdown-item(href='page-title2.html')
+              li.dropdown
+                a#MaeketingTeam.dropdown-item.dropdown-toggle(href='#')  
+                ul.dropdown-menu
+                  li.nav-item
+                    a#MaeketingTeamMember1.dropdown-item(href='modal-popup1.html')  
+              li.nav-item.dropdown
+                a#ReasercherAndDeveloperTeam.dropdown-item.dropdown-toggle(href='#')  
+                ul.dropdown-menu
+                  li.nav-item
+                    a#ReasercherAndDeveloperTeamMember1.dropdown-item(href='font1.html')
+          li.nav-item.dropdown
+            a#articleTitle.nav-link.dropdown-toggle(href='#!')
+            ul.dropdown-menu
+              li.dropdown
+                a#articleSubTitle1.dropdown-item.dropdown-toggle(href='#')
+                ul.dropdown-menu
+                  li.nav-item
+                    a#ProgrammingTitles1.dropdown-item(href='services.html')
+                  li.nav-item
+                    a#ProgrammingTitles2.dropdown-item(href='services2.html')
+                  li.nav-item
+                    a#ProgrammingTitles3.dropdown-item(href='services3.html')
+                  li.nav-item
+                    a#ProgrammingTitles4.dropdown-item(href='services4.html')
+                  li.nav-item
+                    a#ProgrammingTitles5.dropdown-item(href='services5.html')
+                  li.nav-item
+                    a#ProgrammingTitles6.dropdown-item(href='services5.html')
+                  li.nav-item
+                    a#ProgrammingTitles7.dropdown-item(href='services5.html')
+              li.dropdown
+                a#articleSubTitle2.dropdown-item.dropdown-toggle(href='#')
+                ul.dropdown-menu
+                  li.nav-item
+                    a#graphicTitles1.dropdown-item(href='about.html')
+                  li.nav-item
+                    a#graphicTitles2.dropdown-item(href='about2.html')
+                  li.nav-item
+                    a#graphicTitles3.dropdown-item(href='about3.html')
+                  li.nav-item
+                    a#graphicTitles4.dropdown-item(href='about3.html')
+              li.dropdown
+                a#articleSubTitle3.dropdown-item.dropdown-toggle(href='#')
+              li.dropdown
+                a#articleSubTitle4.dropdown-item.dropdown-toggle(href='#')
+          li.nav-item
+            a#educationCoursesTitle.nav-link(href='#!')
+            // /.dropdown-menu
+          li.nav-item.dropdown
+            a#aboutTitle.nav-link.dropdown-toggle(href='#!')
+          li.nav-item.dropdown
+            a#CallTitle.nav-link.dropdown-toggle(href='#!')
+        // /.navbar-nav
+      // /.navbar-collapse
+    // /.container
+  // /.navbar
+  // /.offcanvas-info
+  .wrapper.dark-wrapper
+    .rev_slider_wrapper.fullwidth-container
+      #slider10.rev_slider.fullwidthbanner(data-version='5.4.7')
+        ul
+          li(data-transition='fade' data-thumb='')
+            img(src='/images/tekmarket.jpg' alt='')
+            .tp-caption.font-weight-600.color-white.text-center(data-x='center' data-y='middle' data-voffset="['-45','-45','-45','-45']" data-fontsize="['50','50','40','36']" data-lineheight="['65','65','55','51']" data-width="['550','550','550','340']" data-textalign="['center','center','center','center']" data-whitespace="['normal','normal','normal','normal']" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.7;sY:0.7;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-responsive='on' data-responsive_offset='on' style='z-index: 9 ; font-family: iransansmobile;')
+              p#introTitle
+            // /.tp-caption
+            a#btnInputProduct.tp-caption.btn.btn-l.btn-white.btn-strong-hover.scroll(data-x='center' data-y='middle' data-voffset="['85','85','85','85']" data-width="['auto','auto','auto','auto']" data-textalign="['center','center','center','center']" data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.7;sY:0.7;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-responsive='on' data-responsive_offset='on' style='z-index: 9;' href='#')
+            // /.tp-caption
+        .tp-bannertimer.tp-bottom
+      // /.rev_slider
+    // /.rev_slider_wrapper
+  // /.wrapper
+  .wrapper.white-wrapper
+    .container.inner
+      .text-center
+        h2#ourServicesTitle.title-bg.bg-light.color-default  
+      .space10
+      h3.display-3.text-center(style='font-size: 25px;')
+        | &#x6AF;&#x631;&#x648;&#x647; &#x62A;&#x628;&#x644;&#x6CC;&#x63A;&#x627;&#x62A;&#x6CC; &#x67E;&#x627;&#x628;&#x644;&#x6CC;&#x6A9; &#x6A9;&#x62F; &#x62F;&#x631; &#x62E;&#x62F;&#x645;&#x62A; &#x634;&#x645;&#x627;
+        br.d-none.d-lg-block
+        | &#x647;&#x62F;&#x641; &#x645;&#x627; &#x627;&#x641;&#x632;&#x627;&#x6CC;&#x634; &#x641;&#x631;&#x648;&#x634; &#x634;&#x645;&#x627;&#x633;&#x62A;
+      .space30
+      .row.gutter-60.text-center.align-items-end
+        .col-md-4
+          figure.mb-30
+            img(src='#' srcset='/images/concept/concept14.png 1x, /images/concept/concept14@2x.png 2x' alt='')
+          h4#nameServicesTitle1
+          p#desServicesPCM.mb-15.text-justify(style='direction: rtl; text-align:right;')
+          .text-center
+            a#readMoreText1.more(href='#')
+        // /column
+        .space20.d-md-none
+        .col-md-4
+          figure.mb-30
+            img(src='#' srcset='/images/concept/concept19.png 1x, /images/concept/concept19@2x.png 2x' alt='')
+          h4#nameServicesTitle2
+          p#desServicesPCP.mb-15.text-justify(style='direction: rtl; text-align:right;')  
+          .text-center
+            a#readMoreText2.more(href='#')
+        // /column
+        .space20.d-md-none
+        .col-md-4
+          figure.mb-30
+            img(src='#' srcset='/images/concept/concept18.png 1x, /images/concept/concept18@2x.png 2x' alt='')
+          h4#nameServicesTitle3
+          p#desServicesPCG.mb-15.text-justify(style='direction: rtl; text-align:right;')
+          .text-center
+            a#readMoreText3.more(href='#')
+        // /column
+      // /.row
+      .space140
+      .row.align-items-center
+        .col-lg-6
+          figure
+            img(src='#' srcset='/images/concept/concept15.png 1x, /images/concept/concept15@2x.png 2x' alt='')
+        // /column
+        .space20.d-md-none
+        .space50.d-none.d-md-block.d-lg-none
+        .col-lg-6.pl-60.pl-md-15(style='direction: rtl; text-align: right;')
+          h2#textToBeginWithText.title-bg.bg-default.color-default
+          br
+          .space10
+          h3#desToBeginWithText.display-3.text-justify(style='text-align: right;')
+          .space20
+          .row
+            .col-md-6
+              h5#titleFirstStep(style='font-size: 17px;')
+                span.color-default  1. 
+              p#firstStepParagraph.text-justify
+              .title-bg.bg-blue.color-blue.text-center
+                a#loginTextLink(href='#' style='font-size: 15px;')
+            // /column
+            .col-md-6
+              h5#titleFirstStep2(style='font-size: 17px;')
+                span.color-default 2.
+              p#firstStepParagraph2.text-justify
+              .title-bg.bg-yellow.color-yellow.text-center
+                a#addProduct(href='#' style='font-size: 15px;')  
+            // /column
+            .space10.d-none.d-md-block
+            .col-md-6
+              h5#titleFirstStep3(style='font-size: 17px;')
+                span.color-default 3.
+              p#firstStepParagraph3.text-justify
+              .title-bg.bg-green.color-green.text-center
+                a#supporUtnit(href='#' style='font-size: 15px;')
+            // /column
+            .col-md-6
+              h5#titleFirstStep4(style='font-size: 17px;')
+                span.color-default 4.
+              p#firstStepParagraph4.text-justify
+            // /column
+          // /.row
+        // /column
+      // /.row
+      .space140
+      .row.align-items-center
+        .col-lg-6.order-lg-2.text-center
+          figure
+            img(src='#' srcset='/images/concept/concept17.png 1x, /images/concept/concept17@2x.png 2x' alt='')
+        // /column
+        .space20.d-md-none
+        .space50.d-none.d-md-block.d-lg-none
+        .col-lg-6.pr-60.pr-md-15(style='text-align: right; direction: rtl;')
+          h2.title-bg.bg-default.color-default &#x627;&#x647;&#x62F;&#x627;&#x641; &#x645;&#x627; &#x686;&#x6CC;&#x633;&#x62A; &#x61F;
+          .space10
+          h3#targetTitle.display-3
+          .space20
+          #accordion-1.accordion-wrapper.simple
+            .card
+              #accordion-heading-1-1.card-header
+                h5
+                  button#subTargetTitle1(data-toggle='collapse' data-target='#accordion-collapse-1-1' aria-expanded='true' aria-controls='accordion-collapse-1-1' style='text-align: right;')
+              // /.card-header
+              #accordion-collapse-1-1.collapse.show(aria-labelledby='accordion-heading-1-1' data-parent='#accordion-1')
+                .card-body
+                  p
+                    | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                    | sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
+                    | vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes.
+                // /.card-body
+              // /.collapse
+            // /.card
+            .card
+              #accordion-heading-1-2.card-header
+                h5
+                  button#subTargetTitle2.collapsed(data-toggle='collapse' data-target='#accordion-collapse-1-2' aria-expanded='false' aria-controls='accordion-collapse-1-2' style='text-align: right;')
+              // /.card-header
+              #accordion-collapse-1-2.collapse(aria-labelledby='accordion-heading-1-2' data-parent='#accordion-1')
+                .card-body
+                  p
+                    | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                    | sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
+                    | vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes.
+                // /.card-body
+              // /.collapse
+            // /.card
+            .card
+              #accordion-heading-1-3.card-header
+                h5
+                  button#subTargetTitle3.collapsed(data-toggle='collapse' data-target='#accordion-collapse-1-3' aria-expanded='false' aria-controls='accordion-collapse-1-3' style='text-align: right;')
+              // /.card-header
+              #accordion-collapse-1-3.collapse(aria-labelledby='accordion-heading-1-3' data-parent='#accordion-1')
+                .card-body
+                  p
+                    | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                    | sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
+                    | vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes.
+                // /.card-body
+              // /.collapse
+            // /.card
+          // /.accordion-wrapper
+        // /column
+      // /.row
+    // /.container
+  // /.wrapper
+  // /.container
+// /.wrapper
+.wrapper.light-wrapper
+  .container.inner
+    h2.section-title.mb-40.text-center Public Code Women
+    .row
+      .col-lg-8.offset-lg-2.text-justify(style='text-align: right; direction: rtl;')
+        p
+          | &#x642;&#x633;&#x645;&#x62A;&#x6CC; &#x627;&#x632; &#x627;&#x647;&#x62F;&#x627;&#x641; &#x645;&#x627; &#x62D;&#x645;&#x627;&#x6CC;&#x62A; &#x627;&#x632; &#x6A9;&#x633;&#x628; &#x648; &#x6A9;&#x627;&#x631; &#x647;&#x627;&#x6CC; &#x628;&#x627;&#x646;&#x648;&#x627;&#x646; &#x628;&#x631;&#x627;&#x6CC; &#x67E;&#x6CC;&#x627;&#x62F;&#x647; &#x633;&#x627;&#x632;&#x6CC; &#x627;&#x6CC;&#x62F;&#x647; &#x647;&#x627;&#x6CC; &#x62E;&#x648;&#x62F; &#x647;&#x645;&#x686;&#x646;&#x6CC;&#x646; &#x631;&#x627;&#x647;&#x646;&#x645;&#x627;&#x6CC;&#x6CC; &#x648; &#x645;&#x634;&#x627;&#x648;&#x631;&#x647;
+          | &#x631;&#x627;&#x6CC;&#x6AF;&#x627;&#x647; &#x628;&#x631;&#x627;&#x6CC; &#x62A;&#x627;&#x6CC;&#x6CC;&#x646; &#x62F;&#x631;&#x633;&#x62A; &#x645;&#x633;&#x6CC;&#x631; &#x6A9;&#x633;&#x628; &#x62F;&#x631;&#x622;&#x645;&#x62F; &#x648; &#x627;&#x6CC;&#x62C;&#x627;&#x62F; &#x631;&#x648;&#x62C;&#x6CC;&#x647; &#x648; &#x646;&#x634;&#x627;&#x637; &#x628;&#x631;&#x627;&#x6CC; &#x6CC;&#x6A9;&#x627;&#x6CC;&#x6A9; &#x627;&#x641;&#x62A;&#x62E;&#x627;&#x631; &#x627;&#x648;&#x631;&#x627;&#x646; &#x627;&#x6CC;&#x646; &#x633;&#x631;&#x632;&#x645;&#x6CC;&#x646; &#x645;&#x6CC; &#x628;&#x627;&#x634;&#x62F;
+      // /column
+    // /.row
+  // /.container
+  // /.wrapper
+  .wrapper.white-wrapper
+    .container.inner
+      .text-center
+        h2.title-bg.bg-default.color-default Happy Customers
+      .space10
+      h3.display-3.text-center
+        | Customer satisfaction is our major goal. 
+        br.d-none.d-lg-block
+        | See
+        |           what our customers are saying about us.
+      .space40
+      .row.align-items-center
+        .col-lg-6.pr-60.pr-md-15
+          figure
+            img(src='#' srcset='/images/concept/concept16.png 1x, /images/concept/concept16@2x.png 2x' alt='')
+        // /column
+        .space20.d-md-none
+        .space50.d-none.d-md-block.d-lg-none
+        .col-lg-5
+          .basic-slider.owl-carousel.gap-small.dots-left(data-margin='30')
+            .item
+              blockquote.icon.icon-left.larger.text-left
+                p
+                  | &quot;Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  | Duis mollis, est non commodo luctus, nisi cras mattis consectetur purus posuere.&quot;
+                .blockquote-details
+                  .info.p-0
+                    h6.mb-0 Cornelia Gibson
+                    span.meta.mb-0 Financial Analyst
+            // /.item
+            .item
+              blockquote.icon.icon-left.larger.text-left
+                p
+                  | &quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta
+                  | felis euismod semper. Cras justo odio, posuere consectetur est at lobortis.&quot;
+                .blockquote-details
+                  .info.p-0
+                    h6.mb-0 Coriss Ambady
+                    span.meta.mb-0 Marketing Specialist
+            // /.item
+            .item
+              blockquote.icon.icon-left.larger.text-left
+                p
+                  | &quot;Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                  | Cras justo odio, dapibus ac facilisis in, egestas eget posuere consectetur est at lobortis.&quot;
+                .blockquote-details
+                  .info.p-0
+                    h6.mb-0 Barclay Widerski
+                    span.meta.mb-0 Sales Manager
+            // /.item
+          // /.owl-carousel
+        // /column
+      // /.row
+      .space80
+      .carousel.owl-carousel.clients(data-margin='30' data-loop='true' data-dots='false' data-autoplay='true' data-autoplay-timeout='3000' data-responsive='{"0":{"items": "2"}, "768":{"items": "4"}, "992":{"items": "5"}, "1140":{"items": "6"}}')
+        .item.pl-15.pr-15
+          img(src='/images/art/z1.svg' alt='')
+        .item.pl-15.pr-15
+          img(src='/images/art/z2.svg' alt='')
+        .item.pl-15.pr-15
+          img(src='/images/art/z3.svg' alt='')
+        .item.pl-15.pr-15
+          img(src='/images/art/z4.svg' alt='')
+        .item.pl-15.pr-15
+          img(src='/images/art/z5.svg' alt='')
+        .item.pl-15.pr-15
+          img(src='/images/art/z6.svg' alt='')
+        .item.pl-15.pr-15
+          img(src='/images/art/z7.svg' alt='')
+        .item.pl-15.pr-15
+          img(src='/images/art/z8.svg' alt='')
+      // /.owl-carousel
+    // /.container
+  // /.wrapper
+  .wrapper.light-wrapper
+    .container.inner
+      .space20
+      .row
+        .col-lg-5.pr-50.pr-md-15
+          h2.title-bg.bg-default.color-default Our Pricing
+          .space10
+          h3.display-3 We offer great prices, premium and quality products for your business.
+          .space20
+          p
+            | Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Maecenas
+            | sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Cras
+            | justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est. Sed posuere
+            | consectetur est at lobortis.
+        // /column
+        .space70.d-none.d-md-block.d-lg-none
+        .space20.d-md-none
+        .col-lg-7
+          .pricing-wrapper
+            .row.no-gutters
+              .col-md-6.popular
+                .pricing.panel.box.bg-white.shadow
+                  .panel-heading
+                    .prices.color-dark
+                      .price.price-show
+                        span.price-currency $
+                        span.price-value 9
+                        span.price-duration month
+                      .price.price-hide.price-hidden
+                        span.price-currency $
+                        span.price-value 99
+                        span.price-duration year
+                    h4.panel-title.mb-0 Basic Plan
+                  // /.panel-heading
+                  .panel-body
+                    table.table
+                      tr
+                        td
+                          strong 1
+                          |  Project
+                      tr
+                        td
+                          strong 100K
+                          |  API Access
+                      tr
+                        td
+                          strong 100MB
+                          |  Storage
+                      tr
+                        td
+                          | Custom 
+                          strong Cloud
+                          |  Services
+                      tr
+                        td
+                          | Weekly 
+                          strong Reports
+                      tr
+                        td
+                          | 7/24 
+                          strong Support
+                  // /.panel-body
+                  .panel-footer
+                    a.btn(href='#' role='button') Choose Plan
+                // /.pricing
+              // /column
+              .col-md-6
+                .pricing.panel.box.bg-white.shadow
+                  .panel-heading
+                    .prices.color-dark
+                      .price.price-show
+                        span.price-currency $
+                        span.price-value 19
+                        span.price-duration month
+                      .price.price-hide.price-hidden
+                        span.price-currency $
+                        span.price-value 199
+                        span.price-duration year
+                    h4.panel-title.mb-0 Premium Plan
+                  // /.panel-heading
+                  .panel-body
+                    table.table
+                      tr
+                        td
+                          strong 5
+                          |  Projects
+                      tr
+                        td
+                          strong 100K
+                          |  API Access
+                      tr
+                        td
+                          strong 200MB
+                          |  Storage
+                      tr
+                        td
+                          | Custom 
+                          strong Cloud
+                          |  Services
+                      tr
+                        td
+                          | Weekly 
+                          strong Reports
+                      tr
+                        td
+                          | 7/24 
+                          strong Support
+                  // /.panel-body
+                  .panel-footer
+                    a.btn(href='#' role='button') Choose Plan
+                // /.pricing
+              // /column
+            // /.row
+          // /.pricing-wrapper
+        // /column
+      // /.row
+      .space140
+      .row
+        .col-lg-6
+          figure
+            img(src='#' srcset='/images/concept/concept13.png 1x, /images/concept/concept13@2x.png 2x' alt='')
+        // /column
+        .space50.d-none.d-md-block.d-lg-none
+        .space10.d-md-none
+        .col-lg-6.pl-60.pl-md-15
+          h2.title-bg.bg-default.color-default FAQ
+          .space10
+          h3.display-3
+            | If you don&apos;t see an answer to your question, you can send us an email from our contact
+            | form.
+          .space20
+          #accordion-2.accordion-wrapper.simple
+            .card
+              #accordion-heading-2-1.card-header
+                h5
+                  button.collapsed(data-toggle='collapse' data-target='#accordion-collapse-2-1' aria-expanded='false' aria-controls='accordion-collapse-2-1')
+                    | Can I cancel my
+                    | subscription?
+              // /.card-header
+              #accordion-collapse-2-1.collapse(aria-labelledby='accordion-heading-2-1' data-target='#accordion-2')
+                .card-body
+                  p
+                    | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                    | sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
+                    | vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    | nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.
+                // /.card-body
+              // /.collapse
+            // /.card
+            .card
+              #accordion-heading-2-2.card-header
+                h5
+                  button.collapsed(data-toggle='collapse' data-target='#accordion-collapse-2-2' aria-expanded='false' aria-controls='accordion-collapse-2-2')
+                    | Which payment methods do you
+                    | accept?
+              // /.card-header
+              #accordion-collapse-2-2.collapse(aria-labelledby='accordion-heading-2-2' data-target='#accordion-2')
+                .card-body
+                  p
+                    | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                    | sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
+                    | vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    | nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.
+                // /.card-body
+              // /.collapse
+            // /.card
+            .card
+              #accordion-heading-2-3.card-header
+                h5
+                  button.collapsed(data-toggle='collapse' data-target='#accordion-collapse-2-3' aria-expanded='false' aria-controls='accordion-collapse-2-3') How can I manage my Account?
+              // /.card-header
+              #accordion-collapse-2-3.collapse(aria-labelledby='accordion-heading-2-3' data-target='#accordion-2')
+                .card-body
+                  p
+                    | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                    | sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
+                    | vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    | nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.
+                // /.card-body
+              // /.collapse
+            // /.card
+            .card
+              #accordion-heading-2-4.card-header
+                h5
+                  button.collapsed(data-toggle='collapse' data-target='#accordion-collapse-2-4' aria-expanded='false' aria-controls='accordion-collapse-2-4')
+                    | Is my credit card information
+                    | secure?
+              // /.card-header
+              #accordion-collapse-2-4.collapse(aria-labelledby='accordion-heading-2-4' data-target='#accordion-2')
+                .card-body
+                  p
+                    | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                    | sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
+                    | vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    | nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.
+                // /.card-body
+              // /.collapse
+            // /.card
+            .card
+              #accordion-heading-2-5.card-header
+                h5
+                  button.collapsed(data-toggle='collapse' data-target='#accordion-collapse-2-5' aria-expanded='false' aria-controls='accordion-collapse-2-5')
+                    | How do I get my subscription
+                    | receipt?
+              // /.card-header
+              #accordion-collapse-2-5.collapse(aria-labelledby='accordion-heading-2-5' data-target='#accordion-2')
+                .card-body
+                  p
+                    | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                    | sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
+                    | vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    | nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.
+                // /.card-body
+              // /.collapse
+            // /.card
+          // /.accordion-wrapper
+        // /column
+      // /.row
+    // /.container
+  // /.wrapper
+  footer.dark-wrapper.inverse-text
+    .container.inner
+      .row
+        .col-md-4.col-lg-3
+          .widget
+            img(src='#' srcset='/images/logo-light.png 1x, /images/logo-light@2x.png 2x' alt='')
+            .space40
+            p
+              | &copy; 2020 Snowlake App. 
+              br.d-none.d-lg-block
+              | All rights reserved.
+          // /.widget
+        // /column
+        .col-md-4.col-lg-3
+          .widget
+            h3.widget-title Get in Touch
+            address
+              | Moonshine St.
+              br.d-none.d-lg-block
+              |  14/05 Light City,
+              br.d-none.d-lg-block
+              |                 London, United Kingdom
+            a(href='mailto:first.last@email.com') info@email.com
+            br
+            |  +00 (123) 456 78 90
+          // /.widget
+        // /column
+        .col-md-4.col-lg-3
+          .widget
+            h3.widget-title Learn More
+            ul.list-unstyled
+              li
+                a.nocolor(href='#') About Us
+              li
+                a.nocolor(href='#') Our Story
+              li
+                a.nocolor(href='#') Projects
+              li
+                a.nocolor(href='#') Terms of Use
+              li
+                a.nocolor(href='#') Privacy Policy
+              li
+                a.nocolor(href='#') Contact Us
+          // /.widget
+        // /column
+        .space30.d-none.d-md-block.d-lg-none
+        .col-md-12.col-lg-3
+          .widget
+            h3.widget-title Our Newsletter
+            p Subscribe to our newsletter to get our news &amp; deals delivered to your inbox!
+            .space10
+            .newsletter-wrapper
+              form#mc-embedded-subscribe-form.validate(action='https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&id=b49ef47a9a' method='post' name='mc-embedded-subscribe-form' target='_blank' novalidate='')
+                #mc_embed_signup_scroll.input-group
+                  input#mce-EMAIL.email.form-control.mb-0.mr-2.mb-sm-0(type='email' value='' name='EMAIL' placeholder='Email Address' required='')
+                  button#mc-embedded-subscribe.btn.btn-rounded.btn-default.mr-0.mb-0.pull-right(type='submit' name='subscribe') Join
+                  // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                  div(style='position: absolute; left: -5000px;' aria-hidden='true')
+                    input(type='text' name='b_ddc180777a163e0f9f66ee014_056957de28' tabindex='-1' value='')
+                  .clearfix
+            // /.newsletter-wrapper
+          // /.widget
+        // /column
+      // /.row
+    // /.container
+// /.content-wrapper
+script(src='/js/jquery.min.js')
+script(src='/js/popper.min.js')
+script(src='/js/bootstrap.min.js')
+script(src='/revolution/js/jquery.themepunch.tools.min.js')
+script(src='/revolution/js/jquery.themepunch.revolution.min.js')
+script(src='/revolution/js/extensions/revolution.extension.actions.min.js')
+script(src='/revolution/js/extensions/revolution.extension.carousel.min.js')
+script(src='/revolution/js/extensions/revolution.extension.kenburn.min.js')
+script(src='/revolution/js/extensions/revolution.extension.layeranimation.min.js')
+script(src='/revolution/js/extensions/revolution.extension.migration.min.js')
+script(src='/revolution/js/extensions/revolution.extension.navigation.min.js')
+script(src='/revolution/js/extensions/revolution.extension.parallax.min.js')
+script(src='/revolution/js/extensions/revolution.extension.slideanims.min.js')
+script(src='/revolution/js/extensions/revolution.extension.video.min.js')
+script(src='/js/plugins.js')
+script(src='/js/scripts.js')
+script(src='/js/homeString.js')
