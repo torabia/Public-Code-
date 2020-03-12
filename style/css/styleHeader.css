@@ -43,7 +43,7 @@ button:focus {
 /*	02. GENERAL
 /*-----------------------------------------------------------------------------------*/
 html {
-    font-size: 20px;
+    font-size: 12px;
 }
 body {
     -webkit-font-smoothing: antialiased;
@@ -65,7 +65,8 @@ body {
 }
 .navbar .container-fluid {
     padding-left: 30px;
-    padding-right: 30px
+    padding-right: 30px;
+    
 }
 body,
 li,
@@ -257,7 +258,7 @@ h6.text-uppercase,
     padding: 0.35rem 0.7rem 0.3rem;
 }
 .page-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 2.8rem;
     margin-bottom: 1rem;
 }
@@ -289,6 +290,7 @@ h6.text-uppercase,
 .lead {
     font-size: 1rem;
     line-height: 1.5rem;
+    margin-top: 20px;
 }
 .page-title-wrapper .lead {
     font-size: 1.1rem;
@@ -351,6 +353,7 @@ div{
 .navbar-nav,
 .navbar-nav * {
     line-height: 1;
+    direction: rtl;
 }
 .navbar .container {
     position: relative;
@@ -404,7 +407,7 @@ div{
 .navbar-nav .nav-link,
 .dropdown-item,
 .mega-menu-content a {
-    font-size: 0.5rem;
+    font-size: 0.85rem;
     font-weight: 500;
 }
 .nav-uppercase .navbar-nav .nav-link {
