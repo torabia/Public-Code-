@@ -1,0 +1,145 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' href='/images/favicon.png')
+  title Public Code
+  link(rel='stylesheet' type='text/css' href='/css/bootstrap.min.css')
+  link(rel='stylesheet' type='text/css' href='/css/plugins.css')
+  link(rel='stylesheet' type='text/css' href='/revolution/css/settings.css')
+  link(rel='stylesheet' type='text/css' href='/revolution/css/layers.css')
+  link(rel='stylesheet' type='text/css' href='/revolution/css/navigation.css')
+  link(rel='stylesheet' type='text/css' href='/type/type.css')
+  link(rel='stylesheet' type='text/css' href='/css/style.css')
+  link(rel='stylesheet' type='text/css' href='/css/color/purple.css')
+  link(href='https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i&display=swap' rel='stylesheet')
+  link(rel='stylesheet' type='text/css' href='/css/font/font2.css')
+.content-wrapper
+  nav.navbar.absolute.transparent.inverse-text.navbar-hover-opacity.nav-uppercase.navbar-expand-lg
+    .container.flex-row.justify-content-center
+      .navbar-brand
+      .navbar-other.ml-auto.order-lg-3
+        ul.navbar-nav.flex-row.align-items-center(data-sm-skip='true')
+          li.nav-item
+            .navbar-hamburger.d-lg-none.d-xl-none.ml-auto
+              button.hamburger.animate.plain(data-toggle='offcanvas-nav')
+                span
+        // /.navbar-nav
+      // /.navbar-other
+      .navbar-collapse.offcanvas-nav
+        .offcanvas-header.d-lg-none.d-xl-none
+          a(href='index.html')
+            img(src='#' srcset='/images/logo-light.png 1x, /images/logo-light@2x.png 2x' alt='')
+          button.plain.offcanvas-close.offcanvas-nav-close
+            i.jam.jam-close
+        ul.navbar-nav.mx-auto(style='text-align:right; ')
+          li.nav-item
+            a#titleIndex.nav-link(href='index.html')
+          li.nav-item.dropdown
+            a#teamCategories.nav-link.dropdown-toggle(href='#!')
+            ul.dropdown-menu
+              li.dropdown
+                a#GraphicTeam.dropdown-item.dropdown-toggle(href='#')
+                ul.dropdown-menu
+                  li.nav-item
+                    a#shayanGheraphicTeam.dropdown-item(href='header.html')
+              li.dropdown
+                a#programmersTeam.dropdown-item.dropdown-toggle(href='#')
+                ul.dropdown-menu
+                  li.nav-item
+                    a#programmersTeamMember1.dropdown-item(href='footer.html')
+                  li.nav-item
+                    a#programmersTeamMember2.dropdown-item(href='footer2.html')
+              li.dropdown
+                a#animationTeam.dropdown-item.dropdown-toggle(href='#')
+                ul.dropdown-menu
+                  li.nav-item
+                    a#animationTeamMember1.dropdown-item(href='page-title.html')
+                  li.nav-item
+                    a#animationTeamMember2.dropdown-item(href='page-title2.html')
+              li.dropdown
+                a#MaeketingTeam.dropdown-item.dropdown-toggle(href='#')  
+                ul.dropdown-menu
+                  li.nav-item
+                    a#MaeketingTeamMember1.dropdown-item(href='modal-popup1.html')  
+              li.nav-item.dropdown
+                a#ReasercherAndDeveloperTeam.dropdown-item.dropdown-toggle(href='#')  
+                ul.dropdown-menu
+                  li.nav-item
+                    a#ReasercherAndDeveloperTeamMember1.dropdown-item(href='font1.html')
+          li.nav-item.dropdown
+            a#articleTitle.nav-link.dropdown-toggle(href='#!')
+            ul.dropdown-menu
+              li.dropdown
+                a#articleSubTitle1.dropdown-item.dropdown-toggle(href='#')
+                ul.dropdown-menu
+                  li.nav-item
+                    a#ProgrammingTitles1.dropdown-item(href='services.html')
+                  li.nav-item
+                    a#ProgrammingTitles2.dropdown-item(href='services2.html')
+                  li.nav-item
+                    a#ProgrammingTitles3.dropdown-item(href='services3.html')
+                  li.nav-item
+                    a#ProgrammingTitles4.dropdown-item(href='services4.html')
+                  li.nav-item
+                    a#ProgrammingTitles5.dropdown-item(href='services5.html')
+                  li.nav-item
+                    a#ProgrammingTitles6.dropdown-item(href='services5.html')
+                  li.nav-item
+                    a#ProgrammingTitles7.dropdown-item(href='services5.html')
+              li.dropdown
+                a#articleSubTitle2.dropdown-item.dropdown-toggle(href='#')
+                ul.dropdown-menu
+                  li.nav-item
+                    a#graphicTitles1.dropdown-item(href='about.html')
+                  li.nav-item
+                    a#graphicTitles2.dropdown-item(href='about2.html')
+                  li.nav-item
+                    a#graphicTitles3.dropdown-item(href='about3.html')
+                  li.nav-item
+                    a#graphicTitles4.dropdown-item(href='about3.html')
+              li.dropdown
+                a#articleSubTitle3.dropdown-item.dropdown-toggle(href='#')
+              li.dropdown
+                a#articleSubTitle4.dropdown-item.dropdown-toggle(href='#')
+          li.nav-item
+            a#educationCoursesTitle.nav-link(href='#!')
+            // /.dropdown-menu
+          li.nav-item.dropdown
+            a#aboutTitle.nav-link.dropdown-toggle(href='#!')
+          li.nav-item.dropdown
+            a#CallTitle.nav-link.dropdown-toggle(href='#!')
+
+            block header
+        // /.navbar-nav
+      // /.navbar-collapse
+    // /.container
+  // /.navbar
+  // /.offcanvas-info
+  .wrapper.dark-wrapper
+    .rev_slider_wrapper.fullwidth-container
+      #slider10.rev_slider.fullwidthbanner(data-version='5.4.7')
+        ul
+          li(data-transition='fade' data-thumb='')
+            img(src='/images/art/bg9.jpg' alt='')
+            .tp-caption.font-weight-600.color-white.text-center(data-x='center' data-y='middle' data-voffset="['-45','-45','-45','-45']" data-fontsize="['50','50','40','36']" data-lineheight="['65','65','55','51']" data-width="['550','550','550','340']" data-textalign="['center','center','center','center']" data-whitespace="['normal','normal','normal','normal']" data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.7;sY:0.7;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-responsive='on' data-responsive_offset='on' style='z-index: 9 ; font-family: iransansmobile;')
+              p#introTitle
+
+
+script(src='/js/jquery.min.js')
+script(src='/js/popper.min.js')
+script(src='/js/bootstrap.min.js')
+script(src='/revolution/js/jquery.themepunch.tools.min.js')
+script(src='/revolution/js/jquery.themepunch.revolution.min.js')
+script(src='/revolution/js/extensions/revolution.extension.actions.min.js')
+script(src='/revolution/js/extensions/revolution.extension.carousel.min.js')
+script(src='/revolution/js/extensions/revolution.extension.kenburn.min.js')
+script(src='/revolution/js/extensions/revolution.extension.layeranimation.min.js')
+script(src='/revolution/js/extensions/revolution.extension.migration.min.js')
+script(src='/revolution/js/extensions/revolution.extension.navigation.min.js')
+script(src='/revolution/js/extensions/revolution.extension.parallax.min.js')
+script(src='/revolution/js/extensions/revolution.extension.slideanims.min.js')
+script(src='/revolution/js/extensions/revolution.extension.video.min.js')
+script(src='/js/plugins.js')
+script(src='/js/scripts.js')
+script(src='/js/homeString.js')
